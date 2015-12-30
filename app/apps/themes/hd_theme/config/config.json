@@ -1,0 +1,14 @@
+{
+  "name" : "HD theme",
+  "description" : "This is the default theme of Camaleon CMS customize for happy dining",
+  "thumb" : "images/image.png",
+  "helpers": [
+    "Themes::CamaleonFirst::MainHelper"
+  ],
+  "hooks": {
+    "on_active": ["camaleon_first_on_install_theme"],
+    "on_inactive": ["camaleon_first_on_uninstall_theme"],
+    "on_theme_settings": ["camaleon_first_settings"]
+    //here all your hooks
+  }
+}
