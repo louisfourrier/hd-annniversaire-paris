@@ -1,0 +1,67 @@
+<div class="row text-left">
+	<%= form_tag({controller: "general", action: "new_group_project"}, method: "post", class: "project-form-1") do %>
+
+
+	<div class="col-md-12 form-group">
+			<%= text_field_tag :telephone, nil, class: "form-control ", placeholder: "Téléphone", required: true%>
+	</div>
+
+	<div class="col-md-12 form-group">
+
+
+			<%= email_field_tag :email, nil, class: "form-control", placeholder: "Votre email pour vous tenir au courant", required: true%>
+
+	</div>
+
+
+
+	<div class="form-group col-md-12">
+
+			<%= text_field_tag(:date, params[:date], class: "form-control datepicker", placeholder: "Date de l'événement") %>
+
+	</div>
+
+	<div class="form-group col-md-12">
+
+			<span class="text-uppercase" >Nombre de personnes </span><%= select_tag(:number_of_persons, options_for_select(['0 - 10 personnes', '10 - 20 personnes', '20 - 30 personnes', '30 - 40 personnes', '40 - 50 personnes', '50 - 60 personnes', '60 - 70 personnes', '70 - 80 personnes', 'Plus de 80 personnes']), { class: "selectpicker", data: {"width" => "200px"}}) %>
+
+	</div>
+
+	<div class="form-group col-md-12">
+			<span class="text-uppercase" >Budget par personne </span><%= select_tag(:budget, options_for_select(['20 - 30 €', '30 - 40 €', '40 - 50 €', '50 - 60 €', '60 - 70 €', '70 - 80 €', 'Plus de 80 €']), { class: "selectpicker", data: {"width" => "200px"}}) %>
+	</div>
+
+	<%= hidden_field_tag :referring_page, request.original_url %>
+
+	<div class="col-md-12 form-group">
+
+		<%= text_area_tag :comment, nil, class: "form-control", placeholder: "Autres commentaires", rows: 6 %>
+	</div>
+
+	<div class="row text-center col-md-12">
+		<%= button_tag(type: "submit", class: "btn btn-default btn-lg btn-orange") do %>
+     	<i class="fa fa-inbox"></i> Déposer votre demande
+		<% end %>
+	</div>
+	<% end %>
+</div>
+
+<%= content_for(:end_scripts) do %>
+<script>
+	$(function () {
+	$('.selectpicker').selectpicker();
+
+$('.datepicker').datepicker({
+format: "dd/mm/yyyy",
+clearBtn: true,
+language: "fr",
+autoclose: true,
+startDate: "<%= Time.now.to_date.strftime('%d/%m/%Y') %>",
+	todayHighlight: true
+	}).on("changeDate", function(e){
+	$("#time").focus();
+	});
+	})
+</script>
+
+<% end %>

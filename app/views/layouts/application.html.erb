@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="fr">
+	<head>
+		<%= render partial: 'layouts/meta_common' %>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<%= stylesheet_link_tag 'application', media: 'all' %>
+	
+		<%= csrf_meta_tags %>
+		<%= render partial: "layouts/analytics_meta" %>
+	</head>
+	<body id="page-top">
+
+		<%= render partial: 'layouts/navbar' %>
+
+		<%= yield %>
+
+		<div class="modal fade" id="layout-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							x
+						</button>
+						<h4 class="modal-title green"></h4>
+					</div>
+					<div class="modal-body"></div>
+					<div class="modal-footer">
+						<button class="btn btn-danger hidden" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<%= render partial: 'layouts/end_scripts' %>
+
+	</body>
+</html>

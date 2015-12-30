@@ -1,0 +1,247 @@
+<header>
+  <div class="header-content">
+    <div class="header-content-inner">
+      <h1>Restaurants pour anniversaire à Paris</h1>
+      <hr>
+      <p>Le guide pour trouver gratuitement le meilleur restaurant pour votre anniversaire à Paris !</p>
+      <a href="#about" class="btn btn-primary btn-xl page-scroll">Tester la recherche</a>
+    </div>
+  </div>
+</header>
+
+<section class="bg-primary" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 text-center ">
+        <h2 class="section-heading">Nous recherchons pour vous !</h2>
+        <hr class="light">
+
+
+        <div class="row">
+  				<div class="col-xs-3 text-center padding-top-10">
+  					<%= image_tag "landing/qualite_restaurant.svg", class: "height-50", alt: "Les meilleurs restaurants sont sur Happy Dining"%>
+  				</div>
+  				<div class="col-xs-9">
+  					<h4 class="text-uppercase"><b>Qualité</b></h4>
+  					Une séléction des meilleurs restaurants : Aucun risque de se tromper
+  				</div>
+  			</div>
+
+  			<div class="row">
+  				<div class="col-xs-3 text-center padding-top-10">
+  					<%= image_tag "landing/rapidite.svg", class: "height-50", alt: "Happy Dining répond à vos demandes d'événements en moins de 2 heures"%>
+  				</div>
+  				<div class="col-xs-9">
+  					<h4 class="text-uppercase"><b>Rapidité</b></h4>
+  					Nous nous engageons à vous faire une proposition précise et selon vos critères dans un délai de 4 heures
+  				</div>
+  			</div>
+
+  			<div class="row">
+  				<div class="col-xs-3 text-center padding-top-10">
+  					<%= image_tag "landing/service_gratuit.svg", class: "height-50", alt: "Happy Dining est un service 100% gratuit"%>
+  				</div>
+  				<div class="col-xs-9">
+  					<h4 class="text-uppercase"><b>Aucun Frais</b></h4>
+  					La gestion de votre réservation est entièrement gratuite
+  					<br />
+  				</div>
+  			</div>
+
+  			<div class="row">
+  				<div class="col-xs-3 text-center padding-top-10">
+  					<%= image_tag "landing/organisation_restaurant_groupe.png", class: "height-50", alt: "Des conseillers s'occupent de toutes vos demandes de privatisations ou de restaurants de groupe" %>
+  				</div>
+  				<div class="col-xs-9">
+  					<h4 class="text-uppercase"><b>Un service personnalisé</b></h4>
+  					Un assistant joignable de 8h00 à 23h00 7J/J s'occupe de traiter votre demande
+  				</div>
+  			</div>
+
+
+
+      </div>
+
+
+      <div class="col-md-6 text-center col-md-offset-1">
+
+        <h2 class="section-heading">Votre projet</h2>
+        <hr class="light">
+        <%= render partial: "layouts/form/project_form_1" %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Le meilleur service</h2>
+        <hr class="primary">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box">
+          <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+          <h3>Première plateforme à Paris</h3>
+          <p class="text-muted">Nous sommes la première plateforme de recherche de restaurant pour des anniversaires et des fêtes sur Paris</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box">
+          <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+          <h3>Réponse en moins de 4 heures</h3>
+          <p class="text-muted">Décrivez-nous votre événement et en moins de 4 heures recevez des premières propositions de restaurant</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box">
+          <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+          <h3>Un service sur mesure</h3>
+          <p class="text-muted">Nous sommes une équipe constitué de passionnés de gastronomie. Nous répondrons à toutes vos demandes de manière personnalisée.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box">
+          <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+          <h3>Les meilleurs restaurants</h3>
+          <p class="text-muted">Nous vous proposons uniquement les restaurants que nous avons personnelement essayé</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<aside class="bg-dark">
+  <div class="container text-center">
+    <div class="call-to-action">
+      <h2>Lisez tous nos conseils pour réussir son anniversaire</h2>
+      <a href="/groupe/2-articles" class="btn btn-default btn-xl wow tada">Découvrir tous les articles</a>
+    </div>
+  </div>
+</aside>
+
+<section class="no-padding" id="portfolio">
+  <div class="container-fluid">
+    <div class="row no-gutter">
+      <div class="col-lg-4 col-sm-6">
+        <a href="#" class="portfolio-box">
+          <%= image_tag "portfolio/1.jpg", class: "img-responsive" %>
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Catégorie
+              </div>
+              <div class="project-name">
+                Restaurants pour filles
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a href="#" class="portfolio-box">
+          <%= image_tag "portfolio/2.jpg", class: "img-responsive" %>
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Catégorie
+              </div>
+              <div class="project-name">
+                Restaurant original
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a href="#" class="portfolio-box">
+          <%= image_tag "portfolio/3.jpg", class: "img-responsive" %>
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Catégorie
+              </div>
+              <div class="project-name">
+                Restaurants à concept
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a href="#" class="portfolio-box">
+          <%= image_tag "portfolio/4.jpg", class: "img-responsive" %>
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Catégorie
+              </div>
+              <div class="project-name">
+                Restaurant Halal
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a href="#" class="portfolio-box">
+          <%= image_tag "portfolio/5.jpg", class: "img-responsive" %>
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Categorie
+              </div>
+              <div class="project-name">
+                Restaurants club
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a href="#" class="portfolio-box">
+          <%= image_tag "portfolio/6.jpg", class: "img-responsive" %>
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Catégorie
+              </div>
+              <div class="project-name">
+                Restaurant bar à cocktail
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <h2 class="section-heading">Suivez-nous !</h2>
+        <hr class="primary">
+        <p>Suivez-nous sur nos différents réseaux sociaux afin d'être au courant des nouveaux restaurants originaux à Paris pour fêter son anniversaire.</p>
+      </div>
+      <div class="col-lg-4 col-lg-offset-2 text-center">
+        <i class="fa fa-phone fa-3x wow bounceIn"></i>
+        <p>
+          <a href="tel:33176380024">01.76.38.00.24</a>
+        </p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+        <p>
+          <a href="mailto:contact@happydining.fr">contact@happydining.fr</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
