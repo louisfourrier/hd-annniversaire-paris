@@ -80,6 +80,8 @@ gem 'rails_12factor'
 #gem 'newrelic_rpm'
 gem 'unicorn'
 
+gem 'typhoeus'
+
 
 ## OPTIMIZATION COMPRESSION
 gem 'rack-zippy'
@@ -91,6 +93,6 @@ gem 'exception_notification'
 gem 'sitemap_generator'
 
 
-#################### Camaleon CMS include all gems for plugins and themes #################### 
-require './lib/plugin_routes' 
+#################### Camaleon CMS include all gems for plugins and themes ####################
+require './lib/plugin_routes'
 instance_eval(PluginRoutes.draw_gems)
