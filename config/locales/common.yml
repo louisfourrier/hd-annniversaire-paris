@@ -3,7 +3,7 @@
 # note: doesn't support multi level
 en:
   common:
-    read_more: "Read More"
+    read_more: "Lire plus"
     submit: "Submit"
     send: "Send"
     login: "Login"
@@ -12,8 +12,8 @@ en:
     register: "Register"
 
     comment_msg: "You must be logged in to post a comment"
-    comment: "Comment"
-    comments: "Comments"
+    comment: "Commentaire"
+    comments: "Commentaires"
     message: "Message"
     leave_comment: "Leave a comment"
     comment_new: "New Comment"
@@ -21,26 +21,26 @@ en:
     comment_error: "An error was occurred on save comment"
     comment_reply: "Reply"
 
-    recent_posts: "Recent Posts"
+    recent_posts: "Articles récents"
 
 
     search_msg: "Search Results for:"
     search_not_found: "Search items were not found to list"
-    category_list: "Category List"
-    post_tag_list: "Tag List"
+    category_list: "Catégories"
+    post_tag_list: "Tags"
     sub_category_list: "Sub Category List"
     content_list: "Content list: %s"
     visit: "Visit"
     no_contents_found: "No contents found"
     no_results_found: "No results found"
 
-    author: "Author"
+    author: "Auteur"
     site: "Site"
-    categories: "Categories"
-    next: "Next"
-    prev: "Prev"
-    current: "Current"
-    search: "Search"
+    categories: "Catégories"
+    next: "Suivant"
+    prev: "Précédent"
+    current: "Actuel"
+    search: "Rechercher"
     file_format_error: "File format not allowed"
     file_size_exceeded: "File size exceeded"
 
@@ -57,10 +57,11 @@ en:
     addition: "Addition"
     view_all_news: "View all news"
     extra_attributes: "Extra Attributes"
+    edit: "Editer"
 
   will_paginate:
-    previous_label: 'Previous'
-    next_label: 'Next'
+    previous_label: 'Précedent'
+    next_label: 'Suivant'
 
 fr:
   camaleon_cms:
