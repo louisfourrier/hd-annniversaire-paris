@@ -23,12 +23,12 @@
 
 	<div class="form-group col-md-12">
 
-			<span class="text-uppercase" >Nombre de personnes </span><%= select_tag(:number_of_persons, options_for_select(['0 - 10 personnes', '10 - 20 personnes', '20 - 30 personnes', '30 - 40 personnes', '40 - 50 personnes', '50 - 60 personnes', '60 - 70 personnes', '70 - 80 personnes', 'Plus de 80 personnes']), { class: "selectpicker", data: {"width" => "200px"}}) %>
+			<span class="text-uppercase" >Nombre de personnes </span><%= select_tag(:number_of_persons, options_for_select(['0 - 10 personnes', '10 - 20 personnes', '20 - 30 personnes', '30 - 40 personnes', '40 - 50 personnes', '50 - 60 personnes', '60 - 70 personnes', '70 - 80 personnes', 'Plus de 80 personnes'], '10 - 20 personnes'), { class: "selectpicker", data: {"width" => "200px"}}) %>
 
 	</div>
 
 	<div class="form-group col-md-12">
-			<span class="text-uppercase" >Budget par personne </span><%= select_tag(:budget, options_for_select(['20 - 30 €', '30 - 40 €', '40 - 50 €', '50 - 60 €', '60 - 70 €', '70 - 80 €', 'Plus de 80 €']), { class: "selectpicker", data: {"width" => "200px"}}) %>
+			<span class="text-uppercase" >Budget par personne </span><%= select_tag(:budget, options_for_select(['20 - 30 €', '30 - 40 €', '40 - 50 €', '50 - 60 €', '60 - 70 €', '70 - 80 €', 'Plus de 80 €'], '30 - 40 €'), { class: "selectpicker", data: {"width" => "200px"}}) %>
 	</div>
 
 	<%= hidden_field_tag :referring_page, request.original_url %>
