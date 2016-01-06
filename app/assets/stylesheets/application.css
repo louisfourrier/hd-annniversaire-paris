@@ -17,5 +17,6 @@
  *= require_tree ../../../vendor/assets/stylesheets/plugins
  *= require project_form_1
  *= require general
+ *= require calendar_autocomplete_dropdown
  *= require_self
  */

@@ -30,5 +30,9 @@
   textarea{
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     border-radius: 15px;
+
+    &:focus{
+      border:2px solid $dark;
+    }
   }
 }
