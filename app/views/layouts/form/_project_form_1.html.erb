@@ -51,6 +51,7 @@
 
 
 	$(function () {
+
 	$('.selectpicker').selectpicker();
 
 	;(function($){
@@ -75,10 +76,9 @@ language: "fr",
 autoclose: true,
 startDate: "<%= Time.now.to_date.strftime('%d/%m/%Y') %>",
 	todayHighlight: true
-	}).on("changeDate", function(e){
-	$("#time").focus();
-	});
 	})
+	});
+
 </script>
 
 <% end %>

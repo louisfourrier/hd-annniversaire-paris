@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   root "general#home"
 
+  get 'conseils-feter-anniversaire-restaurant', to: "general#advice_anniversaire"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

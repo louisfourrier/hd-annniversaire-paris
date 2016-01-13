@@ -2,6 +2,9 @@ class GeneralController < ApplicationController
   def home
   end
 
+  def advice_anniversaire
+  end
+
 
   def new_group_project
     if !params[:telephone].blank?
