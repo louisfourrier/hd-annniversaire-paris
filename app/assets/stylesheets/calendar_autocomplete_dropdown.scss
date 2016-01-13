@@ -2,6 +2,7 @@
 
 .dropdown-menu.open{
   border-radius: 0px;
+  z-index: 3;
   li:hover{
     color: $orange;
     a{
